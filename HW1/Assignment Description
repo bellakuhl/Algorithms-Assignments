@@ -1,0 +1,21 @@
+# Assignment Description
+
+Implement the following recursive C++ function
+void strXpos (char *dest, const char *src)
+The function makes a copy of a string, src, transposing (flipping) every pair of
+characters, and writes it into dest. If the string has odd length, then the last character
+is not transposed with the ’\0’ character (the output string is always the same length
+as the input string). For example, given an input (src) of "abcde" the string produced 
+(written into dest) would be "badce". As another example, if the input were 1234,
+then the function would produce the string 2143. You may assume that dest points to
+a writeable area with space for each character in src when your function is first called.
+Your main function should receive a string from the command line, call the strXpos
+function with the provided string, and print out the output returned by the function.
+For example, suppose that you compile your program to the executable Problem5, for
+the string “abcde ”, your program should be run as follows:
+Problem5 “abcde”
+In this program, you may not use any library functions (strlen, strdup, malloc, etc).
+You MUST use only recursion for this problem. You may not use iteration (no for,
+while, or do-while loops).
+Submit your solution in a single file, Problem5.cpp, containing your strXpos function
+only (omit the main function).
